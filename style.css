@@ -1,0 +1,149 @@
+html {
+    scroll-behavior: smooth;
+    background-color: black;
+  }
+  body {
+    color: white;
+  }
+  #sample img {
+    border-radius: 20px;
+    border: 7px double #b66e9e;
+    box-shadow: 5px 5px 5px #9caab6;
+  }
+  #sample img:hover {
+    transform: rotate(-5deg);
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  #header ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+  }
+  .container {
+    display: grid;
+    grid-template-rows: 15vh 55vh 1fr 0.5fr 35vh;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+    grid-template-areas:
+      "img head head head"
+      "obj obj profile profile"
+      "project project pro pro"
+      "work work co co"
+      "con con con con";
+    width: 70vw;
+    padding: 20px;
+  }
+  #footer {
+    grid-area: foot;
+    text-align: center;
+  }
+  #code {
+    grid-area: co;
+  }
+  #sample {
+    grid-area: project;
+    text-align: center;
+  }
+  #image {
+    grid-area: img;
+    text-align: center;
+    box-shadow: 5px 5px 5px white;
+    border-radius: 30%;
+    
+  }
+  #header {
+    grid-area: head;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px lightpink;
+    background-image: linear-gradient(
+      to left,
+      #00000000,
+      #c7529ada
+    );
+  }
+  #obj {
+    grid-area: obj;
+    background-image: linear-gradient(to left, #00000000, #588fb1);
+    color: white;
+    box-shadow: 5px 5px 5px skyblue;
+    border: 2px solid skyblue;
+  }
+  #profile {
+    grid-area: profile;
+    text-align: center;
+    box-shadow: 5px 5px 5px skyblue;
+    background-image: linear-gradient(to left, #00000000, #588fb1);
+  }
+  #profile img {
+    border-radius: 40px;
+  }
+  #internship {
+    grid-area: pro;
+    border-radius: 15px;
+    background-image: linear-gradient(
+      to left,
+      #1f1e2200,
+      #4690be
+    );
+    color: white;
+    box-shadow: 5px 5px 5px skyblue;
+    border: 2px solid skyblue;
+  }
+  #cer{
+    grid-area: work;
+    border-radius: 20px;
+    background-image: linear-gradient(
+      to left,
+      #1f1e2200,
+      #588fb1
+    );
+    color: white;
+    box-shadow: 5px 5px 5px skyblue;
+    border: 2px solid skyblue;
+  }
+  .box1{
+    width:450px;
+    padding-left: 25px;
+    margin-top:-300px ;
+
+  }
+  #contact {
+    grid-area: con;
+    text-align: center;
+    background-image: linear-gradient(#00000000, #14eedcda);
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px #3bbeb8;
+  }
+  .box {
+    padding: 10px;
+    border-radius: 19px;
+
+    
+  }
+  a {
+    color: yellow;
+    font-weight: bold;
+    font-size: larger;
+    font-style: italic;
+  }
+  a:hover {
+    color: #924485;
+  }
+  #contact a {
+    margin-left: 30px;
+  }
+  h2 {
+    text-decoration: underline;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  h3 {
+    color: yellow;
+    font-style: italic;
+  }
